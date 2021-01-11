@@ -1,0 +1,36 @@
+[heyi].el-container {
+  align-self: stretch;
+  justify-self: stretch;
+  align-items: stretch;
+
+  >.el-header,
+  >.el-footer {
+    background-color: #B3C0D1;
+    color: #333;
+    padding: 8px 15px;
+  }
+
+  >.el-main {
+    background-color: #e9f3f3;
+    color: #333;
+    height: 100%;
+  }
+
+  >.el-aside {
+    >.el-menu {
+      border: 0px;
+    }
+
+    background-color: #546364;
+    color: #333;
+    min-height: 100%;
+  }
+}
+
+[heyi].el-card {
+  height: fit-content;
+}
+
+[heyi].el-menu{
+  border: 0px;
+}

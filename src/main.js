@@ -1,12 +1,18 @@
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
+import HeyiUI from "heyi/heyi-ui";
+import Store from "store";
 import Vue from "vue";
 import App from "./App.vue";
-import router from "./router";
-import store from "./store";
+import Router from "./router";
+
+Vue.use(ElementUI);
+Vue.use(HeyiUI);
 
 Vue.config.productionTip = false;
 
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+  render: h => h(App),
+  router: Router,
+  store: Store
 }).$mount("#app");

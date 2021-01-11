@@ -1,0 +1,59 @@
+@import "./normalize.css";
+
+:root {
+    --color-text: rgb(23, 36, 32);
+    --color-high-text: rgb(250, 139, 75);
+    --color-tint: rgb(103, 119, 209);
+    --color-backgroud: rgb(255,255,255);
+    --font-size: 14px;
+    --line-height: 1.15;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    user-select: none; /* 禁止用户鼠标在页面上选中文字图片等*/
+    -webkit-tap-highlight-color: transparent;
+    background: var(--color-backgroud);
+    color: var(--color-text);
+    height: 100%;
+    /* rem vw/vh */
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.clear-fix::after {
+    clear: both;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.clear-fix {
+    zoom: 1;
+}
+
+[left] {
+    float: left;
+}
+
+[right] {
+    float: right;
+}
