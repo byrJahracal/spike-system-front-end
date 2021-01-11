@@ -74,7 +74,6 @@ router.beforeEach((to, from, next) => {
   if (to.meta.requireAuth) {
     if (store.getters["User/isLogged"]) {
       if (to.meta.requireRole.indexOf(store.state.User.role) != -1) {
-        console.log("咋回事");
         next();
       } else {
         switch (store.state.User.role) {
@@ -85,7 +84,6 @@ router.beforeEach((to, from, next) => {
             break;
           }
           case "seller": {
-            console.log("咋回事");
             next({
               name: "manage"
             });

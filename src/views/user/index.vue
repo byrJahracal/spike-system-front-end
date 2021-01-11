@@ -60,7 +60,6 @@ export default {
     ...mapActions("User", ["getItems", "charge", "logout"]),
     flip(title) {
       this.activeMenuTitle = title;
-      console.log(title);
     },
     toCharge() {
       if (typeof this.amount === "number") {

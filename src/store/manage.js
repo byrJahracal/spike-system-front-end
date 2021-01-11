@@ -13,7 +13,6 @@ const actions = {
     getItems(theme)
       .then(res => {
         context.state.items = res.items;
-        console.log(context.state.items);
       })
       .catch(err => {
         console.error(err);

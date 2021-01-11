@@ -41,7 +41,7 @@ export function deleteItem(id) {
   return Axios({
     method: "post",
     url: "user/order/delete/",
-    params: {
+    data: {
       id: id
     }
   });

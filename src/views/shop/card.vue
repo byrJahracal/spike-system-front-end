@@ -55,7 +55,6 @@ export default {
     },
     isFlash() {
       if (this.item.remain >= 100) {
-        console.log(this.item.remain);
         return false;
       }
       return true;
@@ -84,7 +83,6 @@ export default {
             })
               .then(res => {
                 if (res.result) {
-                  console.log(res.balance);
                   this.setBalance(res.balance);
                   this.$message({
                     type: "success",
