@@ -1,6 +1,6 @@
 # Hedy Shop线上购物平台(秒杀系统)——前端
 
-***后端项目地址（https://github.com/byrJahracal/spike-system-back-end）***
+***[后端项目链接](https://github.com/byrJahracal/spike-system-back-end)***
 
 ## 简介
 
